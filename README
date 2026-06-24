@@ -1,28 +1,29 @@
-Recruiting Offer Scraper
-A high-performance Python script that scrapes 247Sports and On3 to identify high school football prospects in a specific graduation class who received their first scholarship offer within the last 7 days.
+# Recruiting Offer Scraper
 
-To maximize speed and respect rate limits, the tool utilizes asynchronous HTTP requests paired with a local CSV caching system.
+A high-performance Python script that scrapes **247Sports** and **On3** to identify high school football prospects in a specific graduation class who received their first scholarship offer within the last 7 days. 
 
-Features
-Dual-Platform Scraping: Extracts recruit data from both 247Sports and On3.
+To maximize speed and respect rate limits, the tool utilizes **asynchronous HTTP requests** paired with a **local CSV caching system**.
 
-Asynchronous Speed: Powered by asyncio and aiohttp to fetch pages concurrently rather than sequentially.
+---
 
-Smart Caching: Saves previous request data to a local CSV file to minimize redundant network requests and improve subsequent run times.
+## Features
 
-Anti-Bot Evasion: Integrates undetected-chromedriver for seamless JavaScript rendering and bot-detection bypass.
+* **Dual-Platform Scraping:** Extracts recruit data from both 247Sports and On3.
+* **Asynchronous Speed:** Powered by `asyncio` and `aiohttp` to fetch pages concurrently rather than sequentially.
+* **Smart Caching:** Saves previous request data to a local CSV file to minimize redundant network requests and improve subsequent run times.
+* **Anti-Bot Evasion:** Integrates `undetected-chromedriver` for seamless JavaScript rendering and bot-detection bypass.
+* **Progress Tracking:** Includes visual progress bars using `tqdm` to monitor the scraping status in real-time.
 
-Progress Tracking: Includes visual progress bars using tqdm to monitor the scraping status in real-time.
+---
 
-Tech Stack & Dependencies
+## Tech Stack & Dependencies
+
 The project relies on the following major Python libraries:
 
-aiohttp & asyncio: For asynchronous network requests.
+* `aiohttp` & `asyncio`: For asynchronous network requests.
+* `beautifulsoup4`: For parsing HTML and extracting player data.
+* `undetected-chromedriver`: For handling dynamic content and bypassing anti-scraping walls.
+* `pandas`: For data manipulation, filtering, and managing the CSV cache.
+* `tqdm`: For asynchronous and synchronous progress bars.
 
-beautifulsoup4: For parsing HTML and extracting player data.
-
-undetected-chromedriver: For handling dynamic content and bypassing anti-scraping walls.
-
-pandas: For data manipulation, filtering, and managing the CSV cache.
-
-tqdm: For asynchronous and synchronous progress bars.
+---
